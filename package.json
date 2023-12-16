@@ -1,11 +1,13 @@
 {
   "name": "platypus",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "pnpm exec tsup",
-    "dev": "pnpm exec tsup --watch"
+    "dev": "pnpm exec tsup --watch",
+    "do-typecheck": "pnpm exec tsc --noEmit",
+    "prepublish": "pnpm exec tsup"
   },
   "keywords": [],
   "author": "",
